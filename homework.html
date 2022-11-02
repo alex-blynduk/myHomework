@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="homework.css">
+        <script defer src="homework.js"></script>
+    </head>
+    <body>
+        <nav id="buttonsNav">
+            <div id="startPageBtnsDiv">
+            <button class="button" onclick="showRegisterForm()">Register</button>
+            <button class="button" onclick="showLoginForm(); errorMsg.hidden = true">Login</button>
+            </div>
+
+            <button class="button" id="logoutBtn" onclick="showStartPage()">Logout</button>
+        </nav>
+        <h1 id="siteContent">Site content is visible only for authorized users</h1>
+        <h2 id="errorMessage"></h2>
+        <div id="registerForm">
+            <form autocomplete="off" onsubmit="return registerUser()">
+                <div>
+
+                    <label for="registerLogin">Login</label><br>
+                    <input type="text" name="registerLogin" id="registerLogin" required><br><br>
+
+                    <label for="registerNickname">Nickname</label><br>
+                    <input type="text" name="registerNickname" id="registerNickname" required><br><br>
+
+                    <label for="registerPass">Password</label><br>
+                    <input type="password" name="registerPass" id="registerPass" required><br><br>
+
+                    <label for="registerCheckPass">Confirm password</label><br>
+                    <input type="password" name="registerCheckPass" id="registerCheckPass" required><br><br>
+
+                    <button type="submit" class="submit">Register</button>
+                </div>
+            </form>
+        </div>
+        <div id="loginForm">
+            <form autocomplete="off" onsubmit="return loginUser()">
+
+                <label for="loginFormLog">Login</label><br>
+                <input type="text" name="loginFormLog" id="loginFormLog" required><br><br>
+
+                <label for="loginFormPass">Password</label><br>
+                <input type="password" name="loginFormPass" id="loginFormPass" required><br><br>
+
+                <button type="submit" class="submit">Login</button>
+            </form>
+        </div>
+    </body>
+</html>

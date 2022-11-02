@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.button {
+    height: 30px;
+    width: 100px;
+    margin: 12px;
+    color: white;
+    border: 1px solid white;
+    background: none;
+}
+
+.button:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+input {
+    width: 250px;
+    height: 20px;
+}
+
+.submit {
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 2px;
+    width: 80px;
+    height: 30px;
+}
+
+.submit:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+#buttonsNav {
+    background-color: black;
+    height: 54px;
+    text-align: end;
+    margin-bottom: 15px;
+}
